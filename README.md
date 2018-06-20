@@ -1,4 +1,9 @@
 # Node-CLI-Weather
+## Installation
+```
+npm install
+```
+
 ## Usage
 With no paramater it will retrive your geolocation from your IP:
 ```
