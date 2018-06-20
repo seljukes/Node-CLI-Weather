@@ -19,7 +19,7 @@ if(argv.address === undefined){
 
     return axios.get(`http://api.ipstack.com/${ip}?access_key=4ba9dd11ee1d6b157945e58cb8bfcd68`);
   }).then((response) =>{
-    var weatherUrl = `https://api.forecast.io/forecast/4a04d1c42fd9d32c97a2c291a32d5e2d/${response.data.latitude},${response.data.latitude}?units=auto`;
+    var weatherUrl = `https://api.forecast.io/forecast/b25361a170f134064ea6e582b7509420/${response.data.latitude},${response.data.latitude}?units=auto`;
     console.log(response.data.city + " " + response.data.zip);
     return axios.get(weatherUrl);
   }).then((response) => {
